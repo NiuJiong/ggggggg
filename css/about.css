@@ -291,13 +291,28 @@
 
 }
 
-.container .news:hover,
+
 .container .news.active{
 	border-bottom: 3px solid #ff3366;
 }
-.container .article1:hover,
+
+
+@media (min-width: 768px) {
+	.container .news:hover{
+		border-bottom: 3px solid #ff3366;
+	}
+}
+
+
+
+
 .container .article1.active{
 	border-bottom: 3px solid #ff3366;
+}
+@media (min-width: 768px) {
+	.container .article1:hover{
+		border-bottom: 3px solid #ff3366;
+	}
 }
 /*
 .container .news:hover {
