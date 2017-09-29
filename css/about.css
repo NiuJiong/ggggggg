@@ -351,6 +351,7 @@
 	font-size: 20px;
 	font-family: arial;
 	color: #000000;
+	padding: 10px 0;
 }
 
 .container .col-md-9 p:nth-child(2) {
@@ -759,4 +760,13 @@
 .toolbar-item:hover {
 	background-color: #ff3366;
 	opacity: 1;
+}
+
+.wenzhang #ul li .mt>div:nth-child(1) a{
+	display: block;
+}
+.wenzhang #ul li .mt>div:nth-child(1) a img{
+	display: block;
+	width: 100%;
+	height: auto;
 }
