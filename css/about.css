@@ -25,7 +25,11 @@
 	position: relative;
 	z-index: 9;
 }
-
+@media (max-width: 768px) {
+	#about .box {
+		padding: 2rem;
+	}
+}
 #about .box img {
 	width: 100%;
 }
@@ -39,6 +43,14 @@
 	color: #f36;
 }
 
+@media (max-width: 768px) {
+	#about .box h2{
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+
+
 #about .box h4 {
 	margin: 0;
 	margin-top: 50px;
@@ -46,14 +58,30 @@
 	font-size: 30px;
 	color: #666666;
 }
+@media (max-width: 768px) {
+	#about .box h4{
+		margin-top: 20px;
+	}
+}
+
 
 #about .box2 h4 {
 	margin: 0;
 	margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+	#about .box h4{
+		text-align: center;
+	}
+}
+
 #about .box a.btn {
 	border-radius: 20px;
+	width: auto;
+	margin: auto;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }
 
 #text {
@@ -352,8 +380,21 @@
 
 .mt {
 	margin-bottom: 45px;
+	padding:0 10px;
 }
-
+.mt .col-md-3 a{
+	display: block;
+}
+.mt .col-md-3 a img{
+	
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mt .col-md-9 p:nth-child(1){
+	padding: 10px 0;
+	text-indent: 2em;
+}
 .quests {
 	cursor: pointer;
 }
@@ -367,7 +408,11 @@
 	color: #999999;
 	font-size: 16px;
 }
-
+/*@media (max-width: 768px) {
+	.col-md-4 p{
+		text-indent: 2em;
+	}
+}*/
 #about .box a {
 	font-family: "微软雅黑";
 	font-size: 20px;
@@ -379,7 +424,11 @@
 	font-family: "微软雅黑";
 	font-size: 20px;
 }
-
+@media (max-width: 768px) {
+	.box .col-md-4 .ex {
+		text-align: center;
+	}
+}
 .toolbar {
 	z-index: 99;
 }
@@ -745,3 +794,7 @@
 	background-color: #ff3366;
 	opacity: 1;
 }
+.small{
+	text-align: center;
+}
+
